@@ -4,9 +4,9 @@ A revisited version of BitTorrent.
 In short words: you pay the seeder for the service of distributing to you a file
 In long words: uhm.. it's complicated
 
-FileTorrent will use the Mochimo crypto to make transaction for the services.
-FileTorrent shouldn't need third-party systems to work properly.
-FileTorrent will work as a distributed network. The aim for every node is to know more nodes possible.
+- FileTorrent will use the [Mochimo crypto](https://github.com/mochimodev/mochimo) to make transaction for the services.
+- FileTorrent shouldn't need third-party systems to work properly.
+- FileTorrent will work as a distributed network. The aim for every node is to know more nodes possible.
 
 To explain better I will make a practical example:
 Alice wants to download an app using FileTorrent. Alice's node will send tiny requests to every node she knows. The request contains the hashes, or a portion of them, of the file Alice wants to download. Every seeder will answer Alice if they have or not the file. Let's make that Bob has the file. Alice asks Bob what he wants to let her download the file. Bob answers with the price/Mb. Meanwhile Bob and Alice are asking their "friend-nodes" about each other, in this way Bob and Alice calculates the trust score.
